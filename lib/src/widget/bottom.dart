@@ -1,3 +1,4 @@
+import 'package:dating_app/src/pages/ChatPage.dart';
 import 'package:dating_app/src/pages/mainPage.dart';
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
@@ -15,10 +16,7 @@ class _MyBottomState extends State<Bottom> {
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static List<Widget> _widgetOptions = <Widget>[
     MainPage(),
-    Text(
-      'Index 1: Business',
-      style: optionStyle,
-    ),
+    ChatPage(),
     Text(
       'Index 2: School',
       style: optionStyle,

@@ -5,7 +5,7 @@ List<QuestionModel> questions = [
     "Do you like to travel ?",
     {
       "of course": true,
-      "Yes but only with friend": true,
+      "Yes but only with friend": false,
       "only with family": true,
       "Meh, I prefer to stay home": true,
     },

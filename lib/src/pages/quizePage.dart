@@ -2,7 +2,6 @@ import 'package:dating_app/src/Data/questionList.dart';
 import 'package:dating_app/src/pages/resultPage.dart';
 import 'package:dating_app/src/widget/ktext.dart';
 import 'package:flutter/material.dart';
-import 'package:hexcolor/hexcolor.dart';
 
 class QuizePage extends StatefulWidget {
   const QuizePage({Key? key}) : super(key: key);
@@ -86,11 +85,7 @@ class _QuizzScreenState extends State<QuizePage> {
                         EdgeInsets.only(bottom: 20.0, left: 12.0, right: 12.0),
                     child: MaterialButton(
                       shape: Border.all(
-                        color: btnPressed
-                            ? questions[index].answers!.values.toList()[i]
-                                ? HexColor('#FF18CF')
-                                : Colors.grey
-                            : Colors.grey,
+                        color: btnPressed ? Colors.grey : Colors.amber,
                       ),
                       onPressed: !answered
                           ? () {

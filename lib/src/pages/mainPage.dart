@@ -1,4 +1,5 @@
 import 'package:dating_app/src/model/friend.dart';
+import 'package:dating_app/src/pages/ChatPage.dart';
 import 'package:dating_app/src/widget/ktext.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -122,7 +123,9 @@ class _MainPageState extends State<MainPage> {
                     Container(
                       // margin: EdgeInsets.only(left: 20),
                       child: TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Get.to(ChatPage());
+                          },
                           child: KText(
                             text: 'Chat Now!',
                             color: Colors.white,

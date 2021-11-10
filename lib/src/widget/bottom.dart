@@ -21,10 +21,6 @@ class _MyBottomState extends State<Bottom> {
       'Index 2: School',
       style: optionStyle,
     ),
-    Text(
-      'Index 3: School',
-      style: optionStyle,
-    ),
   ];
 
   void _onItemTapped(int index) {
@@ -54,21 +50,14 @@ class _MyBottomState extends State<Bottom> {
               EvaIcons.navigation2Outline,
               size: 25,
             ),
-            label: 'Navigate',
+            label: 'message',
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              EvaIcons.squareOutline,
+              EvaIcons.person,
               size: 25,
             ),
-            label: 'Square',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              EvaIcons.settings2Outline,
-              size: 25,
-            ),
-            label: 'Setting',
+            label: 'profile',
           ),
         ],
         currentIndex: _selectedIndex,

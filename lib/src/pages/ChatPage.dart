@@ -27,7 +27,9 @@ class ChatPage extends StatelessWidget {
         itemBuilder: (BuildContext context, int index) {
           final Message chat = chats[index];
           return GestureDetector(
-            onTap: () => Get.to(() => SingleChatPage()),
+            onTap: () => Get.to(() => SingleChatPage(
+                  user: chat.sender,
+                )),
             child: Container(
               // circle image
               padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
